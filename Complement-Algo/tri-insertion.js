@@ -12,4 +12,22 @@
 //             T[j+1] = T[j]
 //             j = j - 1
 //         T[j+1] = element_courant
-$;
+
+function tri_selection(T) {
+  for (let i = 0; i < T.length - 1; i++) {
+    let element_courant = T[i];
+    let j = i - 1;
+    while (j >= 0 && T[j] > element_courant) {
+      T[j + 1] = T[j];
+      j = j - 1;
+      T[j + 1] = element_courant;
+    }
+  }
+}
+
+let monTableau = [7, 21, 5, 24, 8, 6, 29];
+console.log("Tableau initial : ", monTableau);
+
+tri_selection(monTableau);
+
+console.log("Tableau trié : ", monTableau);
