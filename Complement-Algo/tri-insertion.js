@@ -1,4 +1,4 @@
-//exo 3 - Implémenter l'algorithme de tri par insertion :
+//exo 3 - Le tri par insertion :
 
 // Le tri par insertion considère chaque élément du tableau et l'insère à la bonne place parmi les éléments déjà triés.
 // Ainsi, au moment où on considère un élément, les éléments qui le précèdent sont déjà triés,
@@ -13,7 +13,8 @@
 //             j = j - 1
 //         T[j+1] = element_courant
 
-function tri_selection(T) {
+function tri_insertion(T) {
+  let iterations = 0;
   for (let i = 0; i < T.length - 1; i++) {
     let element_courant = T[i];
     let j = i - 1;
@@ -21,13 +22,16 @@ function tri_selection(T) {
       T[j + 1] = T[j];
       j = j - 1;
       T[j + 1] = element_courant;
+      iterations++;
     }
   }
+  return iterations;
 }
 
 let monTableau = [7, 21, 5, 24, 8, 6, 29];
 console.log("Tableau initial : ", monTableau);
 
-tri_selection(monTableau);
+const iterationsTotales = tri_insertion(monTableau);
 
 console.log("Tableau trié : ", monTableau);
+console.log("Nombre total d'itérations tri_insertion : ", iterationsTotales);
