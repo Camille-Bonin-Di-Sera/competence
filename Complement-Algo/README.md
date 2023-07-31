@@ -1,12 +1,11 @@
-# Mon dossier "compétences"
+#Répertoire "Compétences"
+Ce répertoire contient :
 
-Il contient :
+Complement-Algo
 
-- Complement-Algo
+##Complement-Algo
+En accédant à ce dossier, vous trouverez un sous-dossier "tri" avec des codes visant à démontrer les différents algorithmes de tri, ainsi que des schémas explicatifs réalisés par moi-même. Vous y trouverez également un sous-dossier intitulé "Exo-ville", en me basant sur les exercices du campus visant à implémenter les différents algorithmes de tri.
 
-## Complement-Algo
-
-Arrivé dedans vous trouverez des code visant à montrer les différents tris ainsi que des schémas explicatifs réalisé par moi-même.
-Il y à aussi un dossier "Exo-ville" reprenant l'exercices du campus pour implémenter les différents tris
+Liens des exercices : https://drive.google.com/drive/folders/1A3t8rhU4Xv3LvMNA8Km4769ppojIxDsV?usp=drive_link
 
 https://www.makeareadme.com/
